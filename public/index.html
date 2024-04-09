@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <table id="recipesTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Ingredients</th>
+                <th>Instructions</th>
+                <th>Cooking Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Recipes will be loaded here -->
+        </tbody>
+    </table>
+
+    <h2>Lägg till nytt recept</h2>
+    <form id="addRecipeForm">
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        <label for="ingredients">Ingredienser (separera med komma):</label>
+        <input type="text" id="ingredients" name="ingredients" required><br><br>
+        <label for="instructions">Instruktioner (separera med punkt):</label>
+        <input type="text" id="instructions" name="instructions" required><br><br>
+        <label for="cookingTime">Tillagningstid (i minuter):</label>
+        <input type="number" id="cookingTime" name="cookingTime" required><br><br>
+        <input type="submit" value="Lägg till recept">
+    </form>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
